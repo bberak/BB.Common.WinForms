@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2FA0FDA-8DC9-4B96-9500-85FD33010AE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BB.Common.WinForms.Example</RootNamespace>
+    <AssemblyName>BB.Common.WinForms.Example</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Showcase\ButtonDemo\ButtonDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Showcase\ButtonDemo\ButtonDemo.Designer.cs">
+      <DependentUpon>ButtonDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\ChangeDemoEventArgs\ChangeDemoEventArgs.cs" />
+    <Compile Include="Showcase\DemoForm\DemoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Showcase\DemoForm\DemoForm.Designer.cs">
+      <DependentUpon>DemoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\IDemo\IDemo.cs" />
+    <Compile Include="Showcase\ProgressBarDemo\ProgressBarDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Showcase\ProgressBarDemo\ProgressBarDemo.Designer.cs">
+      <DependentUpon>ProgressBarDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\ScrollBarDemo\ScrollBarDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Showcase\ScrollBarDemo\ScrollBarDemo.Designer.cs">
+      <DependentUpon>ScrollBarDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\SlidingControlDemo\SlidingControlDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Showcase\SlidingControlDemo\SlidingControlDemo.Designer.cs">
+      <DependentUpon>SlidingControlDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\TextBoxDemo\TextBoxDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Showcase\TextBoxDemo\TextBoxDemo.Designer.cs">
+      <DependentUpon>TextBoxDemo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Showcase\ButtonDemo\ButtonDemo.resx">
+      <DependentUpon>ButtonDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Showcase\DemoForm\DemoForm.resx">
+      <DependentUpon>DemoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Showcase\ProgressBarDemo\ProgressBarDemo.resx">
+      <DependentUpon>ProgressBarDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Showcase\ScrollBarDemo\ScrollBarDemo.resx">
+      <DependentUpon>ScrollBarDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Showcase\SlidingControlDemo\SlidingControlDemo.resx">
+      <DependentUpon>SlidingControlDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Showcase\TextBoxDemo\TextBoxDemo.resx">
+      <DependentUpon>TextBoxDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BB.Common.WinForms\BB.Common.WinForms.csproj">
+      <Project>{2AC486AC-177F-4E43-A9E8-363FABE91E11}</Project>
+      <Name>BB.Common.WinForms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

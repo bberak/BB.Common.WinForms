@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2AC486AC-177F-4E43-A9E8-363FABE91E11}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BB.Common.WinForms</RootNamespace>
+    <AssemblyName>BB.Common.WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Transitions">
+      <HintPath>..\BB.Common.Resources\Dot.Net.Transitions.1.2\Transitions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MetroStyles\MetroButton\MetroButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroButton\MetroButtonDesigner.cs" />
+    <Compile Include="MetroStyles\MetroFlowMenu\MetroFlowMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroFlowMenu\MetroFlowMenu.Designer.cs">
+      <DependentUpon>MetroFlowMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroStyles\MetroForm\MetroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroForm\MetroForm.Designer.cs">
+      <DependentUpon>MetroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroStyles\MetroLabel\MetroLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroLinkLabel\MetroLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroMenuItem\MetroMenuItem.cs" />
+    <Compile Include="MetroStyles\MetroMenuTransition\MetroMenuTransition.cs" />
+    <Compile Include="MetroStyles\MetroPanel\MetroPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroPanel\MetroPanelDesigner.cs" />
+    <Compile Include="MetroStyles\MetroProgressBarSegment\MetroProgressBarSegment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroProgressBarStyle\MetroProgressBarStyle.cs" />
+    <Compile Include="MetroStyles\MetroProgressBar\MetroProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroProgressBar\MetroProgressBar.Designer.cs">
+      <DependentUpon>MetroProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroStyles\MetroResizeButton\MetroResizeButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroResizeButton\MetroResizeButtonDesigner.cs" />
+    <Compile Include="MetroStyles\MetroScrollBarRenderer\MetroScrollBarRenderer.cs" />
+    <Compile Include="MetroStyles\MetroScrollBar\MetroScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroScrollBar\ScrollBarArrowButtonState.cs" />
+    <Compile Include="MetroStyles\MetroScrollBar\ScrollBarControlDesigner.cs" />
+    <Compile Include="MetroStyles\MetroScrollBar\ScrollBarExRenderer.cs" />
+    <Compile Include="MetroStyles\MetroScrollBar\ScrollBarOrientation.cs" />
+    <Compile Include="MetroStyles\MetroScrollBar\ScrollBarState.cs" />
+    <Compile Include="MetroStyles\MetroSlidingControl\MetroSlidingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroSlidingControl\MetroSlidingControl.Designer.cs">
+      <DependentUpon>MetroSlidingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroStyles\MetroSlidingControl\MetroSlidingControlDesigner.cs" />
+    <Compile Include="MetroStyles\MetroTextBox\MetroTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroTextBox\MetroTextBox.Designer.cs">
+      <DependentUpon>MetroTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroStyles\MetroTextBox\MetroTextBoxDesigner.cs" />
+    <Compile Include="MetroStyles\MetroThemes\JaffasTheme\JaffasTheme.cs" />
+    <Compile Include="MetroStyles\MetroToolTip\MetroToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroUserControl\MetroUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroStyles\MetroUserControl\MetroUserControl.Designer.cs">
+      <DependentUpon>MetroUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroStyles\SizeableTextBox\SizeableTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Misc\BaseTheme\BaseTheme.cs" />
+    <Compile Include="Misc\IScrollBarRenderer\IScrollBarRenderer.cs" />
+    <Compile Include="Misc\IThemedComponent\IThemedComponent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\BorderSide\BorderSide.cs" />
+    <Compile Include="Utilities\Border\Border.cs" />
+    <Compile Include="Utilities\Extensions\Extensions.cs" />
+    <Compile Include="Utilities\ThemeManager\ThemeManager.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MetroStyles\MetroFlowMenu\MetroFlowMenu.resx">
+      <DependentUpon>MetroFlowMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroStyles\MetroForm\MetroForm.resx">
+      <DependentUpon>MetroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroStyles\MetroProgressBar\MetroProgressBar.resx">
+      <DependentUpon>MetroProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroStyles\MetroScrollBar\MetroScrollBar.resx">
+      <DependentUpon>MetroScrollBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroStyles\MetroSlidingControl\MetroSlidingControl.resx">
+      <DependentUpon>MetroSlidingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroStyles\MetroTextBox\MetroTextBox.resx">
+      <DependentUpon>MetroTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroStyles\MetroUserControl\MetroUserControl.resx">
+      <DependentUpon>MetroUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroStyles\MetroScrollBar\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
